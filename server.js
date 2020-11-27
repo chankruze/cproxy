@@ -49,11 +49,15 @@ app.use(bodyParser.json());
 //   });
 // }
 
+// api version
+const API_VERSION = "v1";
+
 app.get("/", (req, res) => {
-  res.redirect(`/api/test`);
+  res.redirect(`/api/${API_VERSION}`);
 });
 
-app.use("/api", require("./routes/sample"));
+// app.use("/api", require("./routes/sample"));
+app.use(`/api/${API_VERSION}/`, require("./routes/proxy"));
 
 // Print sevrer IP
 const networkInterfaces = os.networkInterfaces();
