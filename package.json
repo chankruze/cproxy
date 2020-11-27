@@ -13,8 +13,7 @@
     "express": "^4.17.1",
     "helmet": "^4.2.0",
     "mongoose": "^5.10.11",
-    "nanoid": "^3.1.16",
-    "socket.io": "^3.0.1",
+    "nanoid": "^3.1.18",
     "uuid": "^8.3.1"
   },
   "devDependencies": {
